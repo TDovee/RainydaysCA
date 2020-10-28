@@ -117,7 +117,7 @@ main {
 	flex-wrap: row;
 	text-align: center;
 	box-sizing: border-box;
-	background-color: white;
+	background-color: rgb(21, 25, 36);
 	box-shadow: var(--shadow);
 	margin-left: 150px;
 	margin-top: 50px;
@@ -127,12 +127,12 @@ main {
 }
 
 .main-container h1  {
-	color: var(--dark);
+	color: white;
 	padding: 20px;
 }
 
 .main-container h2  {
-	color: var(--dark);
+	color: white;
 	padding-top: 5px;
 }
 
@@ -141,7 +141,7 @@ main {
 }
 
 .main-container a  {
-	color: var(--dark);
+	color: white;
 	box-shadow: var(--shadow);
 	padding: 10px 20px;
 	margin-right: 10px;
@@ -151,8 +151,8 @@ main {
 }
 
 .main-container a:hover {
-	background-color: var(--dark);
-	color: white;
+	background-color: white;
+	color: var(--dark);
 }
 
 
@@ -165,7 +165,7 @@ main {
 
 .footer-container {
 	box-sizing: border-box;
-	padding: 50px 0px;
+	padding: 10px 0px;
 	text-align: left;
 	display: flex;
 	align-items: stretch;
@@ -286,8 +286,12 @@ input[type=text] {
 
 
 .nyhetsbrev h2 {
-	color: grey;
+	color: rgb(21, 25, 36);
 }
+
+/* Footer slutter */
+
+/* icon styling etc */
 
 .socials {
 	display: flex;
@@ -321,6 +325,30 @@ input[type=text] {
 .linked-in {
 	color: #0e76a8
 }
+
+.map {
+	color: red;
+	font-size: 24px;
+}
+
+.heart {
+	color: #F7BE02;
+	font-size: 24px;
+}
+
+.cart {
+	color: #B377C6;
+	font-size: 24px;
+}
+
+.user {
+	color: #3b5998;
+	font-size: 24px;
+}
+
+/* icon styling etc slutter */
+
+
 /* MEDIA */
 
 /* Desktop width 1024px */
