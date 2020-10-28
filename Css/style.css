@@ -346,11 +346,123 @@ input[type=text] {
 	font-size: 24px;
 }
 
+.hamburger {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+	box-shadow: none;
+}
+
 /* icon styling etc slutter */
 
 
 /* MEDIA */
 
+@media (max-width: 1150px) {
+	.navbar ul {
+		display: none;
+	}
+
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-container ul {
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.footer-container ul li a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-container h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1150px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.main-container {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	main {
+		width: 100%;
+	}
+}
+
+
+
+/* CONTACT */
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+
+.form-container input {
+	display: flex;
+	justify-content: center;
+	width: 300px;
+	flex-direction: column;
+}
+
+#skriv-her {
+	width: 300px;
+	height: 200px;
+}
+
+#skriv-her input {
+	display: flex;
+}
+
+textarea  {
+	width: 100%;
+	padding: 12px 12px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.form-container a {
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 300px;
+	box-sizing: border-box;
+	text-align: center;
+	color: var(--dark);
+	border: 1px solid var(--dark);
+}
+
+.form-container a:hover {
+	background-color: var(--dark);
+	color: white;
+}
+
+.form-container h1 {
+	text-transform: uppercase;
+}
 /* Desktop width 1024px */
 
 /* tablet max width 768px */
