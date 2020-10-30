@@ -453,6 +453,7 @@ textarea  {
 	text-align: center;
 	color: var(--dark);
 	border: 1px solid var(--dark);
+	margin-bottom: 100px;
 }
 
 .form-container a:hover {
@@ -463,6 +464,8 @@ textarea  {
 .form-container h1 {
 	text-transform: uppercase;
 }
+
+
 /* Desktop width 1024px */
 
 /* tablet max width 768px */
