@@ -11,6 +11,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "roboto", sans-serif;
+	box-sizing: border-box;
 }
 
 .grid-container {
@@ -95,7 +96,7 @@ header {
 
 /* MAIN SECTION */
 
-main {
+#hjem {
 	background-image: url("../media/minbakgrunn.jpeg");
 	background-repeat: no-repeat;
 	position: relative;
@@ -114,7 +115,7 @@ main {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: row;
+	flex-wrap: wrap;
 	text-align: center;
 	box-sizing: border-box;
 	background-color: rgb(21, 25, 36);
@@ -332,7 +333,7 @@ input[type=text] {
 }
 
 .heart {
-	color: #F7BE02;
+	color: rgba(245,127,23,1);
 	font-size: 24px;
 }
 
@@ -391,23 +392,10 @@ input[type=text] {
 
 }
 
-@media (min-width: 1150px) {
-	.hamburger {
-		display: none;
-	}
-}
 
-@media (max-width: 800px) {
-	.main-container {
-		width: 100%;
-		max-width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-	main {
-		width: 100%;
-	}
-}
+
+
+
 
 
 
@@ -463,12 +451,592 @@ textarea  {
 
 .form-container h1 {
 	text-transform: uppercase;
+	color: rgba(245,127,23,1);
 }
 
 
+
+
+
+
+
+
+
+/*ABOUT*/
+
+#aboutmain {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.about-container {
+	display: flex;
+	max-width: 500px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-container h1 {
+	color: rgba(245,127,23,1);
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-container p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000%;
+	margin-top: 30px;
+	flex-direction: column; 
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#ned {
+	margin-bottom: 200px;
+	display: flex;
+}
+
+#opp {
+	margin-top: 100px;
+	display: flex;
+}
+
+
+
+
+
+
+/*HERRE SIDE*/
+
+.herrenav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.herrenav a {
+	list-style-type: none;
+	text-decoration: none;
+	color: var(--dark);
+	padding: 10px;
+}
+
+.herre-container h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: rgba(245,127,23,1);
+}
+
+#herrebilder {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+	margin-right: 250px;
+	margin-left: 250px;
+	flex-wrap: wrap;
+}
+
+#herrebilder img {
+	height: 320px;
+	max-width: 180px;
+	box-shadow: var(--shadow);
+}
+
+#herremeny {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	flex-wrap: wrap;
+}
+
+#herremeny a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 100px;
+	border: 1px solid var(--dark);
+	list-style-type: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--dark);
+	box-shadow: var(--shadow);
+}
+
+
+
+
+
+.dropdown-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	flex-wrap: wrap;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropbtn {
+	padding: 10px 60px;
+	margin-left: 15px;
+	margin-right: 15px;
+	box-shadow: var(--shadow);
+}
+.drop-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: var(--shadow);
+	z-index: 1;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.drop-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.drop-content a:hover {
+	background-color: rgba(245,127,23,1);
+}
+
+.dropdown:hover .drop-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: rgba(245,127,23,1);
+	box-shadow: var(--shadow);
+}
+
+
+
+
+
+.jakkeliste {
+	min-height: 500px;
+}
+
+.jakkeliste-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.enkeljakke {
+	display: inline-block;
+	margin: 50px;
+	box-shadow: var(--shadow);
+	color: grey;
+	text-decoration: none;
+}
+
+
+.enkeljakke img {
+	height: 320px;
+	width: 180px;
+}
+
+.jakkeliste-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.enkeljakke h1 {
+	font-size: 20px;
+	padding: 5px
+}
+
+.enkeljakke span {
+	font-size: 20px;
+	float: right;
+	color: rgba(245,127,23,1);
+}
+
+.enkeljakke h2 {
+	font-size: 16px;
+	padding: 5px
+}
+.enkeljakke h3 {
+	font-size: 16px;
+	padding: 5px
+}
+
+
+
+
+
+
+
+/*JAKKESIDE*/
+
+#jakke {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.herrebildestor img {
+	max-height: 500px;
+	max-width: 580px;
+	margin-left: 200px;
+	margin-right: 50px;
+}
+
+
+
+.jakkecontainer {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	flex-wrap: wrap;
+}
+
+.jakkeh1 {
+	display: inline-block;
+	padding: 10px;
+}
+
+.jakkeh1 h1 {
+	font-size: 24px;
+	color: rgba(245,127,23,1);
+}
+
+.jakkeh1 span {
+	font-size: 10px;
+	float: right;
+}
+
+
+.herreh2 {
+	padding: 10px;
+}
+.herreh2 h2 {
+	font-size: 18px;
+}
+.herreh2 span {
+	display: flex;
+	float: right;
+}
+
+.stjerner {
+	padding: 10px;
+}
+.stjerner i {
+	color: rgba(245,127,23,1);
+	float: right;
+}
+
+
+.småbilder img {
+	height: 180px;
+	width: 100px;
+}
+
+.småbilder {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.størrelser {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.størrelser p {
+	padding: 20px;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+.jakkecta  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.jakkecta a {
+	padding: 20px 250px;
+	background-color: var(--dark);
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.omprodukt {
+	padding: 10px;
+}
+
+.omprodukt h3 {
+	color: rgba(245,127,23,1);
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+/*checkout*/
+#checkout-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	margin-left: 200px;
+	margin-right: 300px;
+	text-decoration: none;
+}
+
+.checkout-container2 img {
+	max-height: 180px;
+}
+
+
+.checkout-container1 {
+	display: grid;
+	grid-template-columns: 40% 20% 20% 20%;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px
+}
+
+
+.checkout-container2 {
+	display: grid;
+	grid-template-columns: auto auto 20% 20% 20%;
+	align-items: center;
+	max-width: 1000px;
+}
+
+.checkout-container2 a {
+	text-decoration: none;
+	color: black;
+}
+
+#checkout-container hr {
+	margin: 20px;
+}
+
+.checkout-container3 {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	max-width: 400px;
+}
+
+.checkout-container3 p {
+	padding: 10px;
+}
+
+.checkout-container3 span {
+	float: right;
+}
+
+.checkout-container3 a {
+	list-style-type: none;
+	text-decoration: none;
+	padding: 10px 150px;
+	background-color: var(--dark);
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	align-items: center;
+}
+
+
+
+/*complete*/
+
+#complete {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 150px;
+}
+
+.complete-container1 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.complete-container1 i {
+	color: green;
+	font-size: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.complete-container1 h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	margin-top: 30px;
+}
+
+.complete-container1 a {
+	text-decoration: none;
+	background-color: var(--dark);
+	padding: 20px 100px;
+	margin-top: 50px;
+	color: white;
+}
+
+
+.complete-container2 {
+	width: 33%;
+	display: grid;
+	grid-template-rows: auto auto auto
+}
+
+.complete1 {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+
+.complete2 {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	margin-bottom: 100px;
+}
+
+.complete3 {
+	display: grid;
+	grid-template-rows: 33% 33% 33%;
+	max-width: 50%;
+	background-color: lightgrey;
+}
+
+.complete3 span {
+	float: right;
+}
+
+.complete3 p {
+	padding: 20px;
+}
+
+.rødspan span {
+	color: red;
+}
+
+
+#complete hr {
+	max-width: 98%;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*MEDIA*/
+@media (min-width: 1150px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 800px) {
+	.main-container {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	#hjem {
+		width: 100%;
+	}
+}
 /* Desktop width 1024px */
 
 /* tablet max width 768px */
+
+
+@media (max-width: 768px) {
+	.icons {
+		display: none;
+	}
+
+	.searchbar {
+		display: none;
+	}
+	.hamburger {
+		display: flex;
+	}
+	.herre123 {
+		display: none;
+	}
+	#herremeny {
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	#herremeny a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.herre-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.herrebildestor img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	#checkout-container {
+		margin: 0;
+	}
+	
+}
 
 /* phone max width 420px */
 
