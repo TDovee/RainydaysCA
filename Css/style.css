@@ -632,7 +632,13 @@ textarea  {
 
 
 
-
+.jakkeliste h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: rgba(245,127,23,1);
+}
 
 .jakkeliste {
 	min-height: 500px;
