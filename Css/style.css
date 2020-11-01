@@ -1041,7 +1041,13 @@ textarea  {
 	#checkout-container {
 		margin: 0;
 	}
-	
+	#herrebilder {
+		flex-direction: row;
+		margin: 0;
+	}
+	#herrebilder img {
+		margin: 30px;
+	}
 }
 
 /* phone max width 420px */
